@@ -1,8 +1,6 @@
 import heapq
 
 # Функція для алгоритму Дейкстри
-
-
 def dijkstra(graph, start):
     # Відстані від початкової вершини до всіх інших
     distances = {vertex: float('infinity') for vertex in graph}
