@@ -100,14 +100,18 @@ class LinkedList:
 
 # Створення двох списків і додавання елементів
 list1 = LinkedList()
-list1.push(5)
 list1.push(3)
+list1.push(5)
 list1.push(1)
 
 list2 = LinkedList()
-list2.push(6)
 list2.push(4)
 list2.push(2)
+list2.push(6)
+
+# Сортування кожного списку
+list1.head = list1.merge_sort(list1.head)
+list2.head = list2.merge_sort(list2.head)
 
 # Виведення початкових списків
 print("Список 1:")
